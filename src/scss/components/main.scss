@@ -1,0 +1,49 @@
+@import "mixins.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+}
+
+input, select, button {
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto 0 auto;
+    padding: 5px;
+    max-width: 800px;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.5);
+    &__table {
+        width: 100%;
+    }
+    &__table-head {
+        background-color: aliceblue;
+    }
+    &__table-cell {
+        padding-bottom: 10px;
+    }
+    &__filter {
+        display: flex;
+        flex-direction: column;
+    }
+    &__filter-select {
+        width: 100%;
+    }
+    &__filter-label {
+        margin-top: 25px;
+        line-height: 25px;
+    }
+}

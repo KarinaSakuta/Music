@@ -1,0 +1,64 @@
+{
+  "music": [
+    {
+      "singer": "Slipknot",
+      "song": "All hope is gone",
+      "ganre": "Heavy metal",
+      "year": "2008"
+    },
+    {
+      "singer": "Slipknot",
+      "song": "Wait and bleed",
+      "ganre": "Heavy metal",
+      "year": "1999"
+    },
+    {
+      "singer": "Slipknot",
+      "song": "Spit it out",
+      "ganre": "Heavy metal",
+      "year": "1999"
+    },
+    {
+      "singer": "Slipknot",
+      "song": "Left behind",
+      "ganre": "Heavy metal",
+      "year": "2001"
+    },
+    {
+      "singer": "Slipknot",
+      "song": "Before I forget",
+      "ganre": "Heavy metal",
+      "year": "2005"
+    },
+    {
+      "singer": "Lana Del Rey",
+      "song": "Young and beautiful",
+      "ganre": "Pop",
+      "year": "2013"
+    },
+    {
+      "singer": "Lana Del Rey",
+      "song": "Born to die",
+      "ganre": "Pop",
+      "year": "2012"
+    },
+    {
+      "singer": "Lana Del Rey",
+      "song": "Ultraviolence",
+      "ganre": "Pop",
+      "year": "2014"
+    },
+    {
+      "singer": "Lana Del Rey",
+      "song": "Summertime Sadness",
+      "ganre": "Pop",
+      "year": "2012"
+    },
+    {
+      "singer": "Lana Del Rey",
+      "song": "Video games",
+      "ganre": "Pop",
+      "year": "2011"
+    }
+  ]
+}
