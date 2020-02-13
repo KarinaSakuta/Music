@@ -281,7 +281,7 @@ export default class Wrapper extends Component {
             <p className="wrapper__table-text">Song</p>
           </td>
           <td className={ganreCellClasses} onClick={() => this.onSortingChange('ganre')}>
-            <p className="wrapper__table-text">Ganre</p>
+            <p className="wrapper__table-text">Genre</p>
           </td>
           <td className={yearCellClasses} onClick={() => this.onSortingChange('year')}>
             <p className="wrapper__table-text">Year</p>
