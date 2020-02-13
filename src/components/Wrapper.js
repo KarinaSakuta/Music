@@ -213,8 +213,9 @@ export default class Wrapper extends Component {
 
   renderPaginationSizes() {
     return PAGINATION_SIZES.map((paginationSize, index) => {
+      const pagination = classnames('wrapper__pagination-size', {'wrapper__pagination-size_active': paginationSize === this.state.pageSize});
       return (
-        <div key={index} className="wrapper__pagination-size" onClick={() => this.onChangePageSize(paginationSize)}>{paginationSize}</div>
+        <div key={index} className={pagination} onClick={() => this.onChangePageSize(paginationSize)}>{paginationSize}</div>
       );
     });
   }

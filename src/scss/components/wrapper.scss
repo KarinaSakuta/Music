@@ -95,6 +95,9 @@
     &__pagination-size {
         padding: 0 5px;
         cursor: pointer;
+        &_active {
+            color: #9d00ff;
+        }
         &:hover {
             transition: 0.2s;
             transition-timing-function: ease-out;
