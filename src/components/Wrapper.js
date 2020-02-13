@@ -15,7 +15,7 @@ export default class Wrapper extends Component {
       sortingParameter: 'None',
       list: data,
       currentPage: 1,
-      pageSize: 5
+      pageSize: 20
     };
   
     this.onFilterChangeBySinger = this.onFilterChangeBySinger.bind(this);
