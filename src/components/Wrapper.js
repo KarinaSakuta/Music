@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import data from '../music.json';
 import classnames from 'classnames';
+import Favicon from 'react-favicon';
+import logoIcon from '../assets/img/vinyl-record.png';
 
 const PAGINATION_SIZES = [5, 10, 20, 30];
 
@@ -295,9 +297,18 @@ export default class Wrapper extends Component {
     );
   }
 
+  renderIcon() {
+    return (
+      <div>
+        <Favicon url={logoIcon} />
+      </div>
+    );
+  }
+
   render() {
     return (
       <div className="wrapper">
+        {this.renderIcon()}
         <div className="wrapper__container">
           {this.renderTable()}
           {this.renderFilters()}
