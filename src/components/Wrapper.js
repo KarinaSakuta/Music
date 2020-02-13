@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import data from '../music.json';
+import classnames from 'classnames';
 
 const PAGINATION_SIZES = [5, 10, 20, 30];
 
@@ -14,7 +15,7 @@ export default class Wrapper extends Component {
       sortingParameter: 'None',
       list: data,
       currentPage: 1,
-      pageSize: 5,
+      pageSize: 5
     };
   
     this.onFilterChangeBySinger = this.onFilterChangeBySinger.bind(this);
@@ -23,6 +24,7 @@ export default class Wrapper extends Component {
     this.onNextClick = this.onNextClick.bind(this);
     this.onPrevClick = this.onPrevClick.bind(this);
     this.onChangePageSize = this.onChangePageSize.bind(this);
+    this.renderTableHead = this.renderTableHead.bind(this);
   }
 
   getFilteredMusicList(musicList) {
@@ -103,7 +105,7 @@ export default class Wrapper extends Component {
   }
 
   onSortingChange(sortingParameter) {
-    this.setState({ sortingParameter });
+    this.setState({ sortingParameter});
   }
 
   onPrevClick() {
@@ -255,22 +257,26 @@ export default class Wrapper extends Component {
   }
 
   renderTableHead() {
+    const singerCellClasses = classnames('wrapper__table-cell', {'wrapper__table-cell_active': this.state.sortingParameter === 'singer'});
+    const songCellClasses = classnames('wrapper__table-cell', {'wrapper__table-cell_active': this.state.sortingParameter === 'song'});
+    const ganreCellClasses = classnames('wrapper__table-cell', {'wrapper__table-cell_active': this.state.sortingParameter === 'ganre'});
+    const yearCellClasses = classnames('wrapper__table-cell', {'wrapper__table-cell_active': this.state.sortingParameter === 'year'});
     return (
       <thead className="wrapper__table-head">
         <tr className="wrapper__table-row">
           <td className="wrapper__table-cell">
             <p className="wrapper__table-text">№</p>
           </td>
-          <td className="wrapper__table-cell" onClick={() => this.onSortingChange('singer')}>
+          <td className={singerCellClasses} onClick={() => this.onSortingChange('singer')}>
             <p className="wrapper__table-text">Singer</p>
           </td>
-          <td className="wrapper__table-cell" onClick={() => this.onSortingChange('song')}>
+          <td className={songCellClasses} onClick={() => this.onSortingChange('song')}>
             <p className="wrapper__table-text">Song</p>
           </td>
-          <td className="wrapper__table-cell" onClick={() => this.onSortingChange('ganre')}>
+          <td className={ganreCellClasses} onClick={() => this.onSortingChange('ganre')}>
             <p className="wrapper__table-text">Ganre</p>
           </td>
-          <td className="wrapper__table-cell" onClick={() => this.onSortingChange('year')}>
+          <td className={yearCellClasses} onClick={() => this.onSortingChange('year')}>
             <p className="wrapper__table-text">Year</p>
           </td>
         </tr>

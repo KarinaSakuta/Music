@@ -59,6 +59,96 @@
       "song": "Video games",
       "ganre": "Pop",
       "year": "2011"
+    },
+    {
+      "singer": "Rammstein",
+      "song": "Seemann",
+      "ganre": "Hard rock",
+      "year": "1996"
+    },
+    {
+      "singer": "Rammstein",
+      "song": "Sonne",
+      "ganre": "Hard rock",
+      "year": "2001"
+    },
+    {
+      "singer": "Rammstein",
+      "song": "Mein Teil",
+      "ganre": "Hard rock",
+      "year": "2004"
+    },
+    {
+      "singer": "Rammstein",
+      "song": "Amerika",
+      "ganre": "Hard rock",
+      "year": "2004"
+    },
+    {
+      "singer": "Rammstein",
+      "song": "Benzin",
+      "ganre": "Pop",
+      "year": "2005"
+    },
+    {
+      "singer": "Gorillaz",
+      "song": "Clint Eastwood",
+      "ganre": "Hip-hop",
+      "year": "2001"
+    },
+    {
+      "singer": "Gorillaz",
+      "song": "Feel Good Inc",
+      "ganre": "Hip-hop",
+      "year": "2005"
+    },
+    {
+      "singer": "Gorillaz",
+      "song": "Dare",
+      "ganre": "Hip-hop",
+      "year": "2005"
+    },
+    {
+      "singer": "Gorillaz",
+      "song": "19-2000",
+      "ganre": "Hip-hop",
+      "year": "2001"
+    },
+    {
+      "singer": "Gorillaz",
+      "song": "Kids With Guns",
+      "ganre": "Hip-hop",
+      "year": "2006"
+    },
+    {
+      "singer": "Mac DeMarco",
+      "song": "My Kind of Woman",
+      "ganre": "Indie rock",
+      "year": "2013"
+    },
+    {
+      "singer": "Mac DeMarco",
+      "song": "Ode to Viceroy",
+      "ganre": "Indie rock",
+      "year": "2012"
+    },
+    {
+      "singer": "Mac DeMarco",
+      "song": "Dreamin",
+      "ganre": "Indie rock",
+      "year": "2013"
+    },
+    {
+      "singer": "Mac DeMarco",
+      "song": "Chamber of Reflection",
+      "ganre": "Indie rock",
+      "year": "2014"
+    },
+    {
+      "singer": "Mac DeMarco",
+      "song": "Kids With Guns",
+      "ganre": "Indie rock",
+      "year": "2006"
     }
   ]
 }
