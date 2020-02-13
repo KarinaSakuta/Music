@@ -14,7 +14,7 @@ export default class Wrapper extends Component {
       filterBySinger: 'All',
       filterByGanre: 'All',
       filterByYear: 'All',
-      sortingParameter: 'None',
+      sortingParameter: null,
       list: data,
       currentPage: 1,
       pageSize: 10
@@ -46,7 +46,7 @@ export default class Wrapper extends Component {
   }
 
   getSortedMusicList(musicList) {
-    if (this.state.sortingParameter === 'None') {
+    if (this.state.sortingParameter === null) {
       return musicList;
     }
 
@@ -107,7 +107,11 @@ export default class Wrapper extends Component {
   }
 
   onSortingChange(sortingParameter) {
-    this.setState({ sortingParameter});
+    if (sortingParameter === this.state.sortingParameter) {
+      this.setState({ sortingParameter: null })
+    } else {
+      this.setState({ sortingParameter});
+    }
   }
 
   onPrevClick() {
@@ -135,7 +139,7 @@ export default class Wrapper extends Component {
   }
 
   renderSingerOptions() {
-    let singerArray = data.music.map((singerElement) => {
+    let singerArray = this.state.list.music.map((singerElement) => {
       return singerElement.singer;
     });
 
@@ -149,7 +153,7 @@ export default class Wrapper extends Component {
   }
 
   renderGanreOptions() {
-    let ganreArray = data.music.map((ganreElement) => {
+    let ganreArray = this.state.list.music.map((ganreElement) => {
       return ganreElement.ganre;
     });
 
@@ -163,7 +167,7 @@ export default class Wrapper extends Component {
   }
 
   renderYearOptions() {
-    let yearArray = data.music.map((yearElement) => {
+    let yearArray = this.state.list.music.map((yearElement) => {
       return yearElement.year;
     });
 
@@ -263,6 +267,7 @@ export default class Wrapper extends Component {
     const songCellClasses = classnames('wrapper__table-cell', {'wrapper__table-cell_active': this.state.sortingParameter === 'song'});
     const ganreCellClasses = classnames('wrapper__table-cell', {'wrapper__table-cell_active': this.state.sortingParameter === 'ganre'});
     const yearCellClasses = classnames('wrapper__table-cell', {'wrapper__table-cell_active': this.state.sortingParameter === 'year'});
+
     return (
       <thead className="wrapper__table-head">
         <tr className="wrapper__table-row">
