@@ -15,7 +15,7 @@ export default class Wrapper extends Component {
       sortingParameter: 'None',
       list: data,
       currentPage: 1,
-      pageSize: 20
+      pageSize: 10
     };
   
     this.onFilterChangeBySinger = this.onFilterChangeBySinger.bind(this);
@@ -77,7 +77,7 @@ export default class Wrapper extends Component {
   }
 
   getMaxPage() {
-    return this.state.list.music.length / this.state.pageSize;
+    return Math.ceil(this.state.list.music.length / this.state.pageSize);
   }
 
   unique(arr) {

@@ -140,15 +140,45 @@
     },
     {
       "singer": "Mac DeMarco",
-      "song": "Chamber of Reflection",
+      "song": "Only you",
       "ganre": "Indie rock",
       "year": "2014"
     },
     {
       "singer": "Mac DeMarco",
-      "song": "Kids With Guns",
+      "song": "Chamber of reflection",
       "ganre": "Indie rock",
       "year": "2006"
+    },
+    {
+      "singer": "Crystal Castles",
+      "song": "Crimewave",
+      "ganre": "Witch House",
+      "year": "2007"
+    },
+    {
+      "singer": "Crystal Castles",
+      "song": "Air War",
+      "ganre": "Witch House",
+      "year": "2007"
+    },
+    {
+      "singer": "Crystal Castles",
+      "song": "Vanished",
+      "ganre": "Witch House",
+      "year": "2008"
+    },
+    {
+      "singer": "Crystal Castles",
+      "song": "Celestica",
+      "ganre": "Witch House",
+      "year": "2010"
+    },
+    {
+      "singer": "Crystal Castles",
+      "song": "Baptism",
+      "ganre": "Witch House",
+      "year": "2010"
     }
   ]
 }
